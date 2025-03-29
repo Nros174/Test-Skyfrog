@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "RobotCode: Run Current File",
+            "type": "robotcode",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "target": "${file}",
+            "python": "C:\\Users\\K.Nros\\AppData\\Local\\Programs\\Python\\Python313\\python.exe"
+        }
+    ]
+}
