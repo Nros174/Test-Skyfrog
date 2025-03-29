@@ -12,6 +12,7 @@ ${Invalid_Password_Text}     pass
 ${EMPTY}    
 
 *** Test Cases ***
+
 กรอกชื่อผู้ใช้งานและรหัสผ่านที่ถูกต้อง แต่ไม่กดปุ่ม Login
     เปิดหน้าเข้าสู่ระบบ
     ใส่ข้อมูลเข้าสู่ระบบ    ${Valid_Username}    ${Valid_Password}
