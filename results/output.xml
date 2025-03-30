@@ -1,71 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.12.9 on win32)" generated="2025-03-29T22:06:13.401586" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.12.9 on win32)" generated="2025-03-30T08:47:39.157014" rpa="false" schemaversion="5">
 <suite id="s1" name="แบบทดสอบ" source="C:\Users\K.Nros\OneDrive\Desktop\Skyfrog\แบบทดสอบ">
 <suite id="s1-s1" name="Test Skyfrog" source="C:\Users\K.Nros\OneDrive\Desktop\Skyfrog\แบบทดสอบ\Test_Skyfrog.robot">
 <test id="s1-s1-t1" name="กรอกชื่อผู้ใช้งานและรหัสผ่านที่ถูกต้อง แต่ไม่กดปุ่ม Login" line="16">
 <kw name="เปิดหน้าเข้าสู่ระบบ">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-03-29T22:06:14.783994" level="INFO">Opening browser 'chrome' to base url 'https://test.skyfrog.co/Home'.</msg>
+<msg time="2025-03-30T08:47:39.839820" level="INFO">Opening browser 'chrome' to base url 'https://test.skyfrog.co/Home'.</msg>
+<msg time="2025-03-30T08:47:43.001422" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-03-30T08:47:43.001422" level="FAIL">NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</msg>
 <arg>${DEV_URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-03-29T22:06:14.782994" elapsed="4.326095"/>
+<status status="FAIL" start="2025-03-30T08:47:39.839820" elapsed="3.380110">NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-03-29T22:06:19.109089" elapsed="0.153907"/>
+<status status="NOT RUN" start="2025-03-30T08:47:43.220510" elapsed="0.000000"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=/html/body/div[2]/form/div[1]/div/input</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-03-29T22:06:19.262996" elapsed="0.077312"/>
+<status status="NOT RUN" start="2025-03-30T08:47:43.220510" elapsed="0.001869"/>
 </kw>
-<status status="PASS" start="2025-03-29T22:06:14.781997" elapsed="4.558311"/>
+<status status="FAIL" start="2025-03-30T08:47:39.839820" elapsed="3.382935">NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
 </kw>
 <kw name="ใส่ข้อมูลเข้าสู่ระบบ">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-03-29T22:06:19.342308" level="INFO">Typing text 'admin' into text field 'xpath=/html/body/div[2]/form/div[1]/div/input'.</msg>
-<arg>xpath=/html/body/div[2]/form/div[1]/div/input</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-29T22:06:19.341309" elapsed="0.062427"/>
+<arg>${Valid_Username}</arg>
+<arg>${Valid_Password}</arg>
+<status status="NOT RUN" start="2025-03-30T08:47:43.222755" elapsed="0.000000"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-03-29T22:06:19.404739" level="INFO">Typing text '1234' into text field 'xpath=/html/body/div[2]/form/div[2]/div/input'.</msg>
-<arg>xpath=/html/body/div[2]/form/div[2]/div/input</arg>
+<kw name="ปิดเบราว์เซอร์">
+<status status="NOT RUN" start="2025-03-30T08:47:43.222755" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-03-30T08:47:39.834191" elapsed="3.388564">NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<test id="s1-s1-t2" name="เข้าสู่ระบบด้วยชื่อผู้ใช้งานและรหัสผ่านที่ถูกต้อง" line="21">
+<kw name="เข้าสู่ระบบและตรวจสอบความสำเร็จ">
+<kw name="เข้าสู่ระบบ">
+<kw name="เปิดหน้าเข้าสู่ระบบ">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<arg>${DEV_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2025-03-30T08:47:43.234738" elapsed="0.000000">Execution terminated by signal</status>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2025-03-30T08:47:43.234738" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=/html/body/div[2]/form/div[1]/div/input</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-03-30T08:47:43.234738" elapsed="0.002010"/>
+</kw>
+<status status="FAIL" start="2025-03-30T08:47:43.233806" elapsed="0.002942">Execution terminated by signal</status>
+</kw>
+<kw name="ใส่ข้อมูลเข้าสู่ระบบ">
+<arg>${username}</arg>
 <arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-29T22:06:19.403736" elapsed="0.067267"/>
+<status status="NOT RUN" start="2025-03-30T08:47:43.236748" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=/html/body/div[2]/form/div[3]/button/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-03-30T08:47:43.236748" elapsed="0.000000"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="FAIL" start="2025-03-30T08:47:43.232564" elapsed="0.004184">Execution terminated by signal</status>
+</kw>
+<kw name="เข้าสู่หน้าหลัก">
+<status status="NOT RUN" start="2025-03-30T08:47:43.236748" elapsed="0.000000"/>
+</kw>
+<kw name="ปิดเบราว์เซอร์">
+<status status="NOT RUN" start="2025-03-30T08:47:43.239412" elapsed="0.000000"/>
 </kw>
 <arg>${Valid_Username}</arg>
 <arg>${Valid_Password}</arg>
-<status status="PASS" start="2025-03-29T22:06:19.341309" elapsed="0.129694"/>
+<status status="FAIL" start="2025-03-30T08:47:43.230823" elapsed="0.008589">Execution terminated by signal</status>
 </kw>
-<kw name="ปิดเบราว์เซอร์">
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-03-29T22:06:19.471998" elapsed="2.114060"/>
-</kw>
-<status status="PASS" start="2025-03-29T22:06:19.471003" elapsed="2.116228"/>
-</kw>
-<status status="PASS" start="2025-03-29T22:06:14.779986" elapsed="6.807245"/>
+<status status="FAIL" start="2025-03-30T08:47:43.226579" elapsed="0.013935">Execution terminated by signal</status>
 </test>
-<status status="PASS" start="2025-03-29T22:06:13.484648" elapsed="8.104595"/>
+<test id="s1-s1-t3" name="เข้าสู่ระบบด้วยชื่อผู้ใช้งานที่ถูกต้องและรหัสผ่านผิด" line="24">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2025-03-30T08:47:43.241672" elapsed="0.004022">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-t4" name="เข้าสู่ระบบด้วยชื่อผู้ใช้งานที่ถูกต้องและไม่ใส่รหัสผ่าน" line="27">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2025-03-30T08:47:43.248149" elapsed="0.004649">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-t5" name="เข้าสู่ระบบด้วยชื่อผู้ใช้งานผิดและรหัสผ่านถูกต้อง" line="30">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2025-03-30T08:47:43.255152" elapsed="0.003014">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-t6" name="เข้าสู่ระบบด้วยชื่อผู้ใช้งานผิดและรหัสผ่านผิด" line="33">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2025-03-30T08:47:43.261852" elapsed="0.006252">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-t7" name="เข้าสู่ระบบด้วยชื่อผู้ใช้งานผิดและไม่ใส่รหัสผ่าน" line="36">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2025-03-30T08:47:43.268104" elapsed="0.006794">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-t8" name="เข้าสู่ระบบด้วยรหัสผ่านถูกต้องและไม่ใส่ชื่อผู้ใช้" line="39">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2025-03-30T08:47:43.278373" elapsed="0.005477">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-t9" name="เข้าสู่ระบบโดยไม่ใส่ชื่อผู้ใช้งานและรหัสผ่านผิด" line="42">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2025-03-30T08:47:43.283850" elapsed="0.005954">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-t10" name="เข้าสู่ระบบโดยไม่ใส่ชื่อผู้ใช้งานและไม่ใส่รหัสผ่าน" line="45">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2025-03-30T08:47:43.291818" elapsed="0.004934">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" start="2025-03-30T08:47:39.229322" elapsed="4.069686"/>
 </suite>
-<status status="PASS" start="2025-03-29T22:06:13.414593" elapsed="8.175650"/>
+<status status="FAIL" start="2025-03-30T08:47:39.168220" elapsed="4.133592"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="10" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat info="combined" combined="NOT robot:exit" pass="0" fail="2" skip="0">NOT robot:exit</stat>
 </tag>
 <suite>
-<stat name="แบบทดสอบ" id="s1" pass="1" fail="0" skip="0">แบบทดสอบ</stat>
-<stat name="Test Skyfrog" id="s1-s1" pass="1" fail="0" skip="0">แบบทดสอบ.Test Skyfrog</stat>
+<stat name="แบบทดสอบ" id="s1" pass="0" fail="10" skip="0">แบบทดสอบ</stat>
+<stat name="Test Skyfrog" id="s1-s1" pass="0" fail="10" skip="0">แบบทดสอบ.Test Skyfrog</stat>
 </suite>
 </statistics>
 <errors>
+<msg time="2025-03-30T08:47:39.830527" level="ERROR">Error in file 'C:\Users\K.Nros\OneDrive\Desktop\Skyfrog\แบบทดสอบ\Test_Skyfrog.robot' on line 12: Setting variable '${EMPTY}' failed: Recursive variable definition.</msg>
 </errors>
 </robot>
